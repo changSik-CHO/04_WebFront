@@ -1,0 +1,107 @@
+/*
+CSS 파일
+파일 전체가 <style> 태그 내부라고 생각하기
+*/
+
+/* 기본 속성 선택자*/
+div[name="name-1"] {
+  background-color: red;
+}
+
+p[test="test"] {
+  color: blue;
+}
+
+[name="name-2"] {
+  background-color: green;
+}
+
+/* 자식 선택자 */
+
+#parent-ul > li {
+  background-color: orange;
+}
+
+#parent-ul > span {
+  background : red;
+}
+
+/*후손 선택자*/
+#parent-ul span {
+  color :blue;
+
+}
+
+#test-div p{
+   background-color: mediumspringgreen;
+}
+
+/* 반응 선택자 */
+.div-cls {
+ border: 1px solid black;
+ width: 200px;
+ height: 200px;
+ background-color: gray;
+
+ /* 아래쪽 요소와의 간격
+ == 아래쪽 여백을 30px 지정 */
+  margin-bottom: 30px;
+
+  /* 요소에 마우스커서가 올라가면
+  손가락 모양으로 변경*/
+  cursor: pointer;
+}
+
+#active-test:active {
+ background-color: yellow; 
+}
+
+#hover-test:hover{
+  background-color: pink;
+  width: 230px;
+  height: 230px;
+}
+
+#hover-test {
+  /*
+  id가 hover-test인 요소가 스타일의 변화를
+  일으키면 0.5초동안 변해라
+
+  트랜지션(transition) :
+  HTML 요소가 한 상태에서 다른 상태로
+  변하때의 변화를 부드럽게 만들어주는
+  애니메이션 효과
+  점진적으로 몇초에 걸쳐 변화해라..
+  */
+  transition-duration: 0.5s;
+}
+
+/* 상태 선택자 */
+#focus-test:focus {
+  background-color: red;
+}
+input[name="fruits"]: checked {
+  width: 30px;
+  height: 30px;
+  /* radio, checkbox는
+  크기를 제외한 스타일 적용되지 않는다
+  */
+}
+  #test-div2 > input:enabled{
+  background-color: lightgreen;
+
+}
+
+#test-div2> input:disabled {
+  background-color: paleturquoise;
+}
+
+/* 동위 선택자 */
+#div1 + div {
+
+  background-color: olive;
+}
+
+#div3 ~ div {
+  background-color: blue;
+}

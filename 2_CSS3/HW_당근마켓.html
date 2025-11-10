@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW_당근마켓</title>
+   <link rel="stylesheet" href="css/HW_당근마켓.css">
+   <!-- fontawesome js key -->
+  <script src="https://kit.fontawesome.com/573f9a02d6.js" crossorigin="anonymous"></script>
+
+</head>
+  <!-- haeder: 상단 네비게이션 -->
+  <!-- div class="container" : 전체를 감싸는 컨테이너-->
+  <!-- aside: 왼쪽 필터 -->
+  <!-- main: 메인 상품 목록 -->
+ 
+  <!-- 1. 상단 헤더-->
+   <header>
+    <!-- 여기에 로고, 메뉴, 검색창 들어갈 예정-->
+   </header>
+    <div class = "logo">
+      <a href="#">
+        <img src="/images/cats/화면 캡처 2025-11-10 113934.png">
+      </a>
+    </div>
+    
+    <!-- 메인 메뉴 -->
+     <nav class="main-nav">
+      <ul>
+        <li><a href="#">중고거래</a></li>
+        <li><a href="#">부동산</a></li>
+        <li><a href="#">중고차</a></li>
+        <li><a href="#">알바</a></li>
+        <li><a href="#">동네업체</a></li>
+        <li><a href="#">동네생활</a></li>
+        <li><a href="#">모임</a></li>
+        </ul>
+        </nav>
+        <!-- 채팅하기 버튼 -->
+        <button class="chat-btn">채팅하기</button>
+      </div>
+
+      <!-- 검색 영역(두번째 줄)-->
+       <div class="search-container">
+
+        <!-- 지역 선택 -->
+         <div class="location select">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>노원구</span>
+          <i class="fa-solid fa-down-long"></i>
+         </div>
+        <!-- 검색창 -->
+       <form class="search=form">
+        <fieldset>
+          <select class="category-select" name="category">
+            <option value="all">중고거래</option>
+            <option value="부동산">부동산</option>
+            <option value="중고차">중고차</option>
+            <option value="알바">알바</option>
+            <option value="동네업체">동네업체</option>
+            <option value="동네생활">동네생활</option>
+            <option value="모임">모임</option>
+          </select>
+
+          <input type="search" id="query" name="query"
+            placeholder="물건이나 동네를 검색해보세요"
+            autocomplete="off">
+
+          <button id="search-btn" class="fa-solid fa-arrow-right">
+          </button>
+        </fieldset>
+       </form>
+
+      </div>
+  </header>
+
+   <!-- 2-1. 왼쪽 사이드바(필터) -->
+    <aside class="sidebar">
+      
+      <!-- 필터 제목 -->
+       <div class="filter-header">
+        <h3>필터</h3>
+        <button class="filter-reset">초기화</button>
+       </div>
+      
+       <!-- 거래 가능한 물건 체크 박스 -->
+       <div class="filter-section">
+        <label class="filter-checkbox">
+          <input type="checkbox" name="체크박스">
+            <span>거래 가능한 물건</span>
+        </label>
+       </div>
+
+       <!-- 위치 필터 -->
+        <div class="filter-section">
+         <h4>위치</h4>
+          <ul class="location-list">
+          <li><label><input type="radio" name="location" value="광주시" checked> 초월읍</label></li>
+          <li><label><input type="radio" name="location" value="오포읍"> 오포읍</label></li>
+          <li><label><input type="radio" name="location" value="태전동"> 태전동</label></li>
+          <li><label><input type="radio" name="location" value="곤지암읍"> 곤지암읍</label></li>
+          <li><label><input type="radio" name="location" value="경안동"> 경안동</label></li>
+          <li><label><input type="radio" name="location" value="송정동"> 송정동</label></li>
+          </ul>
+          <button class="더보기">더보기</button>
+       </div>
+
+      <!-- 카테고리 필터 -->
+       <div class="filter-section">
+        <h4>카테고리</h4>
+          <ul class= "category-list"></ul>
+             <li><label><input type="checkbox" name="category" value="디지털기기">디지털기기</label></li>
+             <li><label><input type="checkbox" name="category" value="생활가전">생활가전</label></li>
+             <li><label><input type="checkbox" name="category" value="가구/인테리어">가구/인테리어</label></li>
+             <li><label><input type="checkbox" name="category" value="생활/주방">생활/주방</label></li>
+             <li><label><input type="checkbox" name="category" value="유아동">유아동</label></li>
+             <li><label><input type="checkbox" name="category" value="유아도서">유아도서</label></li>
+             <li><label><input type="checkbox" name="category" value="여성의류">여성의류</label></li>
+             <li><label><input type="checkbox" name="category" value="여성잡화">여성잡화</label></li>
+       </div>
+
+      </aside>
+
+    <!-- 2-2. 오른쪽 메인 콘텐츠(상품목록) -->
+     <main class="main-content">
+
+      <!-- 페이지 제목 -->
+       <div class="content-header">
+        <h2>경기도 광주시 초월읍 중고거래</h2>
+       </div>
+
+       <!-- 상품들 -->
+        <div class="상품들">
+          
+          <!--  상품 카드1 -->
+          <article class="prouduct-card">
+            <a href="#">
+              <div class="product-image">
+              <img src="/images/당근1.webp" alt="독일 진공관 라디오">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">독일 진공관 라디오</h3>
+            <p class = "product-price">1,582,000원</p>
+            <p class = "product-location">초월읍, 끌올 36분 전</p>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="#">
+            <div class="product-image">
+              <img src="/images/당근2.webp" alt="한성키보드">
+              <h3 class="product-title">한성 TGF Magnetox XL 래피드...</h3>
+              <p class="product-price">50,000원</p>
+              <p class="product-location">초월읍, 끝올 39분전</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="#">
+            <div class="product-image">
+              <img src="/images/당근3.webp" alt="사과">
+              <h3 class="product-title">사과10kg</h3>
+              <p class="product-price">35,000원</p>
+              <p class="product-location">초월읍, 끝올 39분전</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="#">
+            <div class="product-image">
+              <img src="/images/당근6.webp" alt="책">
+              <h3 class="product-title">공무원책</h3>
+              <p class="product-price">100,0000원</p>
+              <p class="product-location">초월읍, 끝올 39분전</p>
+            </div>
+          </a>
+        </article>
+        
+        <article class="product-card">
+          <a href="#">
+            <div class="product-image">
+              <img src="/images/당근4.webp" alt="감">
+              <h3 class="product-title">단감10kg</h3>
+              <p class="product-price">20,000원</p>
+              <p class="product-location">초월읍, 끝올 39분전</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="#">
+            <div class="product-image">
+              <img src="/images/당근5.webp" alt="에어팟프로 왼쪽유닛">
+              <h3 class="product-title">에어팟프로 유닛</h3>
+              <p class="product-price">40,000원</p>
+              <p class="product-location">초월읍, 끝올 32분전</p>
+            </div>
+          </a>
+        </article>
+
+        </div>
+      <!-- 상품 카드들 -->
+     </main>
+
+    </div>
+
+</body>
+</html>

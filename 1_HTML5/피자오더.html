@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>피자오더.html</title>
+</head>
+<body>
+  <h1>피자 주문하기</h1>
+
+  <form>
+    <label> 고객명: 
+      <input type="text" name="customerName" placeholder="이름을 입력하세요">
+    </label>
+    <br><br>
+
+    <label> 전화번호: 
+      <input type="tel" name="phone" placeholder="010-1234-5678">
+    </label>
+    <br><br>
+    
+    <label> E-mail : 
+      <input type="email" name="email" placholder="example@email.com"
+    </label>
+    <br><br>
+
+    <label>피자 선택:
+      <select name="pizzaType" >
+        <option value=""> -- 피자 종류 선택-- </option>
+        <option value="콤비네이션">콤비네이션</option>
+        <option value="페퍼로니">페퍼로니</option>
+        <option value="치즈">치즈</option>
+      </select>
+    </label>
+    <br><br>
+
+   <fieldset>
+   <legend>피자 사이즈:</legend>
+
+   <lable><input type="radio" name="size" value="Small"> Small</label> <br>
+   <lable><input type="radio" name="size" value="Medium"> Medium</label> <br>
+   <label><input type="radio" name="size" value="large"> large</label>
+   <br><br>
+    </fieldset>
+
+    
+   <div class="box">
+   <p>토핑 선택:</p>
+    <label><input type="checkbox" name= "topping" value="치즈"> 치즈</label>
+    <label><input type="checkbox" name= "topping" value="양파"> 양파</label>
+    <label><input type="checkbox" name= "topping" value= "버섯"> 버섯</label>
+   </div>
+    <br><br>
+
+   <label> 희망 배송 시간:
+    <input type="time" name="deliveryTime">
+   </label>
+   <br><br>
+
+   <label> 요청사항: <br>
+    <textarea name="request" rows="3" cols="40"></textarea>
+   </label>
+   <br><br>
+  </form>
+</body>
+</html>
