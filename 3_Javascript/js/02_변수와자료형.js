@@ -303,3 +303,12 @@ const sumFn = function(a,b) { return a + b}; // 익명함수
 function test() {
 
 }*/
+
+console.log(typeof sumFn); // function
+
+console.log( sumFn(3, 5) );
+
+
+// null
+console.log(typeof null); // object
+
