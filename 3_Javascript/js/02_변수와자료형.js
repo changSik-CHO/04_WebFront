@@ -228,3 +228,78 @@ console.log("phone : " , phone, typeof phone);
 const gender = 'M'; // 홑따옴표 & 한글자만 작성해도 문자열(string)
 console.log("gender : ", gender, typeof gender);
 
+// number (정수, 실수, 양수, 음수, 0등 모든 숫자)
+const age = 25;
+const height = 150.5;
+const eyesight = -5;
+
+console.log("age : ", age, typeof age);
+console.log("height : ", height, typeof height);
+console.log("eyesight : ", eyesight, typeof eyesight);
+
+// boolean (논리값 true/falsr)
+
+const isTrue = true;
+const isFalse = false;
+
+console.log("isTrue : ", isTrue, typeof isTrue);
+console.log("isFalse : ", isFalse, typeof isTrue);
+
+// object (객체)
+// 값을 여러개 저장할 수 있는 형태
+
+// 1) 배열(Array) : 여러값이 나열되어 있는 것의 묶음
+const numbers = [10, 20, 30];
+
+console.log("numbers : ", numbers, typeof numbers);
+
+console.log("numbers 배열 값 중 0번째 : ", 
+  numbers[0],
+  typeof numbers[0]);
+console.log("numbers 배열 값 중 1번째 : ", 
+  numbers[1],
+  typeof numbers[1]);
+console.log("numbers 배열 값 중 2번째 : ", 
+  numbers[2],
+  typeof numbers[2]);
+console.log("numbers 배열 값 중 3번째 : ", 
+  numbers[3],
+  typeof numbers[3]); 
+  
+// JS에서의 배열은 값 추가 및 삭제 가능
+// 크기가 고정되지 않고 필요에 따라 자동으로 늘어나거나
+// 줄어든다
+
+// 2) JS 객체
+// 값을 K:V (Map) 형식으로 여러개 저장하는 형태
+// -> {K:V, K:V, K:V ...}
+
+// K(key) : 값을 구분하는 이름 (변수명 비슷)
+// V(value) : K에 대응되는 값 (변수에 대입되는 값 비슷)
+
+const user = { id: "user01", 
+              pw : "pass01",
+              userName: "홍길동",
+              age : 20 };
+
+console.log("user:", user, typeof user);
+
+// 객체에 존재하는 값을 하나씩 얻어오기
+// 방법 1: 변수명['key']
+console.log(user['id']); // user01
+
+// 방법 2: 변수명.key
+console.log(user.id, user.pw, user.userName, user.age);
+
+// 함수 (function)
+
+// 작성법
+// const 변수명 = function() {};
+// (변수명 == 함수명)
+
+const sumFn = function(a,b) { return a + b}; // 익명함수
+
+/*
+function test() {
+
+}*/
