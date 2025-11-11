@@ -208,3 +208,23 @@ console.log(x);
 // -> 이러한 특성 때문에 let/const는 var 보다
 // 예측 가능한 코드를 작성할 수 있음 (오늘날 지향)
 
+// -----------------------------------------------------------------
+
+// JS 자료형 확인하기
+// typeof 연산자 : 변수/값의 자료형을 출력하는 연산자
+
+
+// undefined : 정의되지 않은 변수 / 값이 아직 대입되지 않았다
+let undef; // 변수 선언
+console.log("undef : ", undef, typeof undef);
+
+// string(문자열) : "" 또는 '' 로 작성된 값
+const userName= "홍길동";
+console.log("userName : ", userName, typeof userName);
+
+const phone = '0101231234';
+console.log("phone : " , phone, typeof phone);
+
+const gender = 'M'; // 홑따옴표 & 한글자만 작성해도 문자열(string)
+console.log("gender : ", gender, typeof gender);
+
