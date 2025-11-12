@@ -6,11 +6,11 @@
   <title>조창래</title>
   <link rel="stylesheet" href="/포트폴리오/조창래.css">
   <script src="https://kit.fontawesome.com/573f9a02d6.js" crossorigin="anonymous"></script>
-
 </head>
+<body>
   <header>
-    <h1>조창래 풀스택 개발자</h1>
-    <p class="subtitle">Web Developer</p>
+    <h1>조창래 | Creative Web Developer</h1>
+    <p class="subtitle">코드로 감성을 디자인하는 개발자</p>
   </header>
 
   <nav>
@@ -29,7 +29,7 @@
      <section id="about">
       <h2>About Me</h2>
       <div class="about-box">
-        <img src="/images/KakaoTalk_20250901_031900406.jpg" alt="조창래 프로필 사진" width="300px" height="300px" class="profile-img">
+        <img src="/포트폴리오/포트폴리오_img/KakaoTalk_20250901_031900406.jpg" alt="조창래 프로필 사진" width="300px" height="300px" class="profile-img">
         <div class="about-text">
           <h2>나를 소개합니다!</h2>
           <p>앞으로 훌륭한 웹 개발자가 되기위해 공부하고 있는 조창래입니다. </p>
@@ -40,7 +40,7 @@
       </div>
      </section>
 
-     <!-- Education 섹션 -->
+     <!-- Education 구역 -->
       <!-- 표를 이용해서 education 섹션을 채울려면 table/tr/td 태그 필요 -->
      <section id="education">
       <h2>Education</h2>
@@ -76,15 +76,14 @@
            </table> 
      </section>
 
-      <!--Skills 섹션-->
+      <!--Skills 구역-->
      <section id="skills">
      <h2>Skills</h2>
      <h3>보유 기술 스택</h3>
 
      <!-- 목록 태그 사용필-->
       <!--내가 가진 무기 : 프론트엔드 -->
-      <div class="skils-container">
-        <div class=" skill-category"></div>
+      <div class="skill-category">
         <h4><i class="fa-solid fa-bookmark"></i>Frontend</h4>
 
         <ul>
@@ -119,13 +118,89 @@
     </div>
   </section>
 
-  <!-- Projects&Hobby 섹션 -->
+  <!-- 프로젝트 & 취미 구역 -->
   <section id="projects">
     <h2>Projects</h2>
 
+    <div class="project-grid">
+      <!--프로젝트 1-->
+      <article class="project-card">
+        <img src="/포트폴리오/포트폴리오_img/당근로고.png" alt="당근마켓 클론 프로젝트" class="project-img">
+        <h3>당근마켓 클론 코딩</h3>
+        <p class="project-date">2025.11</p>
+        <p>HTML/CSS를 활용한 당큰마켓 웹사이트 클론 프로젝트 진행</p>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </article>
+
+      <!--프로젝트 2-->
+      <article class="project-card">
+        <img src="/포트폴리오/포트폴리오_img/수료증.jpg" alt="슬릿AI서포터즈" class="project-img">
+        <h3>슬릿AI서포터즈</h3>
+        <p class="project-date">2025.09</p>
+        <p>AI툴 사용 및 영상제작, 기획 프로젝트 진행</p>
+        <ul class="tech-stack">
+          <li>Whisk</li>
+          <li>Dreamina</li>
+          <li>Capcut</li>
+        </ul>
+      </article>
+
+       <!--좋아하는 취미-->
+      <article class="project-card">
+        <img src="/포트폴리오/포트폴리오_img/네이버블로그.png" alt="" class="hobby-img">
+        <h3>SNS를 이용한 바이럴 마케팅</h3>
+        <p class="hobby-date">2025.06 ~ 2025. 11</p>
+        <p>블로그를 이용해서 다양한 숙박시설 및 여행지 안내</p>
+        <ul class="hobby-stack">
+          <li>Naver-Blog</li>
+          <li>Instagram</li>
+        </ul>
+      </article>
+    </div>
   </section>
+
+  <!-- Contact 구역 -->
+   <section id = "contact">
+    <h1>Contact Me</h1>
+    <p class="contact-intro">프로젝트 문의나 협업 제안은 아래 양식을 통해 연락주세요!</p>
+
+    <form action="#" class="contact-form">
+      <div class="form-group">
+        <lable for="email">이메일</lable>
+        <input type="email" id="email" placeholder="example@email.net">
+
+      <div class="form-group">
+        <lable for="phone">연락처</lable>
+        <input type="tel" id="phone" rows="5" placeholder="010-1234-5678">
+
+         <div class="form-group">
+        <lable for="message">메시지</lable>
+        <textarea id ="message" name="message" placeholder="문의 내용을 입력하세요"></textarea>
+      </div>
+
+     <button type="submit" class="submit-btn">
+      <i class="fa-solid fa-paper-plane"></i>
+     </button>
+    </form>
+
+    <!-- 직접 연락 정보 -->
+    <div class="direct-contact">
+      <h3>직접 연락하기</h3>
+      <p><i class="fa-solid fa-phone"></i>Phone: 010-2264-4057</p>
+      <p><i class="fa-solid fa-envelope"></i>12michael23@naver.com</p>
+    </div>
+   </section>
+
    </main>
-<body>
-  
+
+   <!--Footer 구역-->
+    <footer>
+    <p>&copy; 2025 조창래. All Rights Reserved.</p>
+    <p>본 페이지는 포트폴리오 목적으로 제작되었습니다.</p>
+  </footer>
+
 </body>
 </html>
